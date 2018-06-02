@@ -1,0 +1,11 @@
+<h1>映画館検索！！</h1>
+<p>観たい映画のタイトルと条件を入力すると、すべての条件に一致する形で上映している映画館の一覧が表示されます。</p>
+
+<%= form_tag index_serch_path do |f| %>
+    <%= text_field_tag :title %>
+    <%= select :dub, :type, [["字幕", 1], ["吹替", 0], ["", 0]] %>
+    <%= select :imax, :type, [["IMAX", 1], ["", 0]] %>
+    <%= select :td, :type, [["3D", 1], ["2D", 0]] %>
+    <%= select :fd, :type, [["4DX", 1], ["", 0]] %>
+    <%= submit_tag "検索" %>
+<% end %>

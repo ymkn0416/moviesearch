@@ -1,0 +1,31 @@
+<h1>ShowAll</h1>
+
+<pre>
+<table>
+    <tr><th>ID</th><th>劇場名</th><th>URL</th></tr>
+    <% @tdata.each do |obj| %>
+        <tr>
+            <td><%= obj.id %></td>
+            <td><%= obj.name %></td>
+            <td><%= obj.url %></td>
+        </tr>
+    <% end %>
+</table>
+<br />
+<br />
+<table>
+    <tr><th>ID</th><th>劇場ID</th><th>劇場名</th><th>タイトル</th><th>字幕</th><th>IMAX</th><th>3D</th><th>4DX</th></tr>
+    <% @mdata.each do |obj| %>
+        <tr>
+            <td><%= obj.id %></td>
+            <td><%= obj.theater_Id %></td>
+            <td><%= Theater.find( obj.theater_Id ).name %></td>
+            <td><%= obj.title %></td>
+            <td><%= obj.dub %></td>
+            <td><%= obj.imax %></td>
+            <td><%= obj.threeD %></td>
+            <td><%= obj.fourDx %></td>
+        </tr>
+    <% end %>
+</table>
+</pre>

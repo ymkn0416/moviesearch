@@ -1,0 +1,2 @@
+class SeachTheaterController < ApplicationController
+end

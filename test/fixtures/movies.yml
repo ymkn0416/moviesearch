@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  theaters_Id: 1
+  title: MyText
+  dub: false
+  imax: false
+  threeD: false
+  fourDx: false
+
+two:
+  theaters_Id: 1
+  title: MyText
+  dub: false
+  imax: false
+  threeD: false
+  fourDx: false

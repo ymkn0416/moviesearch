@@ -1,0 +1,14 @@
+<h1>検索結果！！</h1>
+
+<pre>
+<table>
+    <tr><th>劇場名</th><th>URL</th></tr>
+    <% @movies.each do |obj| %>
+        <tr>
+            <td><%= Theater.find( obj.theater_Id ).name %></td>
+            <% @url = Theater.find( obj.theater_Id ).url %>
+            <td><a href="<%= @url %>"><%= @url %></a></td>
+        </tr>
+    <% end %>
+</table>
+</pre>
